@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "QGcaDToGlWwWk4jOKxw7FRPrjl4HWUcLgPV9Bo0XVh/Y/4DXdV591ABp67kei9Nz4vImeeCzQ2W1kdIYZZLwuA==",
+  "success": true,
+  "projectFilePath": "/home/eduardofuncao/Documents/csharp/on-data-server-dotnet/on-data-server-dotnet.csproj",
+  "expectedPackageFiles": [
+    "/home/eduardofuncao/.nuget/packages/microsoft.aspnetcore.openapi/8.0.8/microsoft.aspnetcore.openapi.8.0.8.nupkg.sha512",
+    "/home/eduardofuncao/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "/home/eduardofuncao/.nuget/packages/microsoft.openapi/1.4.3/microsoft.openapi.1.4.3.nupkg.sha512",
+    "/home/eduardofuncao/.nuget/packages/swashbuckle.aspnetcore/6.4.0/swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
+    "/home/eduardofuncao/.nuget/packages/swashbuckle.aspnetcore.swagger/6.4.0/swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
+    "/home/eduardofuncao/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.4.0/swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
+    "/home/eduardofuncao/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.4.0/swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}
