@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "TRFCRC/8zXpzJHtVuOS3GSouwwIaDM0CU6jztF3xHxQ=",
+  "Source": "on-data-server-dotnet",
+  "BasePath": "_content/on-data-server-dotnet",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
