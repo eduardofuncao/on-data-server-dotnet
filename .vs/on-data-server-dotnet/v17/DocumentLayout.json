@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\ads\\csharp\\on-data-server-dotnet\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C55B14F6-8060-4670-934B-8710FBFF50D4}|on-data-server-dotnet.csproj|c:\\ads\\csharp\\on-data-server-dotnet\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{C55B14F6-8060-4670-934B-8710FBFF50D4}|on-data-server-dotnet.csproj|solutionrelative:readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\ads\\csharp\\on-data-server-dotnet\\README.md",
+              "RelativeDocumentMoniker": "README.md",
+              "ToolTip": "C:\\ads\\csharp\\on-data-server-dotnet\\README.md",
+              "RelativeToolTip": "README.md",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACQAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-10-06T13:51:02.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

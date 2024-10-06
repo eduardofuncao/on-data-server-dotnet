@@ -31,7 +31,12 @@ DETALHAR
 - Conexão com banco de dados Oracle
 
 ## Como executar
-1. Utilizar o comando `dotnet run` na raíz do diretório
+Utilizar o comando `dotnet run` na raíz do diretório
+
+## Trabalhando com o banco de dados
+- Para criar o arquivo Migration, executar `dotnet-ef migrations add NomeDaMigration`
+- Para atualizar a migration com base no banco de dados `dotnet-ef migrations update`
+- Caso você precise excluir uma migration, executar `dotnet-ef migrations remove`
 
 ### Para Testar
 - Para realizar os testes da aplicação, está disponibilidada uma collection Bruno em `on-data-collection/` com requests para todos os endpoints implementados FALTA DISPONIBILIZAR
