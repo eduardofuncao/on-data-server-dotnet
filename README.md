@@ -12,7 +12,7 @@ Link GitHub: https://github.com/eduardofuncao/on-data-server-dotnet
 > 
 > responsável pela implementação do endpoint para pacientes
 
-> Jhoe
+> Jhoe Kochi Hashimoto » 553831
 > 
 > responsável pela implementação do README do projeto
  
