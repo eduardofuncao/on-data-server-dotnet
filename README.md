@@ -55,7 +55,7 @@ A arquitetura do sistema segue uma abordagem em camadas, com as seguintes respon
 - **Camada de Dados (Data Access Layer)**: Responsável pela interação com o banco de dados, utilizando o Entity Framework para mapeamento objeto-relacional (ORM).
 
 Diagrama de Entidade-Relacionamento (ER):
-![Diagrama ER](link-para-diagrama.png)
+![Diagrama ER](https://github.com/user-attachments/assets/a65fefc6-89d1-40ab-9486-03b65be135db)
 
 ## Funcionalidades
 - API com toods os verbos para implementação de um sistema CRUD
