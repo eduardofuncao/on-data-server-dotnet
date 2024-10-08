@@ -14,7 +14,7 @@ Link GitHub: https://github.com/eduardofuncao/on-data-server-dotnet
 
 > Jhoe Kochi Hashimoto » 553831
 > 
-> responsável pela implementação do README do projeto
+> responsável pela ideação e definições de negócio do projeto
  
 ## Objetivo
 
@@ -70,6 +70,5 @@ Utilizar o comando `dotnet run` na raíz do diretório
 - Caso você precise excluir uma migration, executar `dotnet-ef migrations remove`
 
 ### Para Testar
-- Para realizar os testes da aplicação, está disponibilidada uma collection Bruno em `on-data-collection/` com requests para todos os endpoints implementados FALTA DISPONIBILIZAR
-- Como alternativa, utilizar o swagger em `http://localhost:$PORT/swagger/index.html`, send $PORT a porta onde o servidor estiver rodando na máquina
+Para realizar os testes, utilizar o swagger em `http://localhost:$PORT/swagger/index.html`, send $PORT a porta onde o servidor estiver rodando na máquina
 
