@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\ads\\csharp\\on-data-server-dotnet\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C55B14F6-8060-4670-934B-8710FBFF50D4}|on-data-server-dotnet.csproj|c:\\ads\\csharp\\on-data-server-dotnet\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{C55B14F6-8060-4670-934B-8710FBFF50D4}|on-data-server-dotnet.csproj|solutionrelative:readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C55B14F6-8060-4670-934B-8710FBFF50D4}|on-data-server-dotnet.csproj|c:\\ads\\csharp\\on-data-server-dotnet\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{C55B14F6-8060-4670-934B-8710FBFF50D4}|on-data-server-dotnet.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -29,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C55B14F6-8060-4670-934B-8710FBFF50D4}|on-data-server-dotnet.csproj|c:\\ads\\csharp\\on-data-server-dotnet\\controllers\\ocorrenciacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C55B14F6-8060-4670-934B-8710FBFF50D4}|on-data-server-dotnet.csproj|solutionrelative:controllers\\ocorrenciacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C55B14F6-8060-4670-934B-8710FBFF50D4}|on-data-server-dotnet.csproj|c:\\ads\\csharp\\on-data-server-dotnet\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{C55B14F6-8060-4670-934B-8710FBFF50D4}|on-data-server-dotnet.csproj|solutionrelative:readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,15 +42,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 7,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Ocorrencia.cs",
               "DocumentMoniker": "C:\\ads\\csharp\\on-data-server-dotnet\\Models\\Ocorrencia.cs",
               "RelativeDocumentMoniker": "Models\\Ocorrencia.cs",
@@ -58,12 +54,11 @@
               "RelativeToolTip": "Models\\Ocorrencia.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T04:45:21.05Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-07T04:45:21.05Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "OnDataDbContext.cs",
               "DocumentMoniker": "C:\\ads\\csharp\\on-data-server-dotnet\\Data\\OnDataDbContext.cs",
               "RelativeDocumentMoniker": "Data\\OnDataDbContext.cs",
@@ -71,12 +66,11 @@
               "RelativeToolTip": "Data\\OnDataDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T04:46:41.22Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-07T04:46:41.22Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\ads\\csharp\\on-data-server-dotnet\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -84,25 +78,24 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T21:49:17.6Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-07T21:49:17.6Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\ads\\csharp\\on-data-server-dotnet\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "C:\\ads\\csharp\\on-data-server-dotnet\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAADDAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-10-07T04:49:05.913Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Paciente.cs",
               "DocumentMoniker": "C:\\ads\\csharp\\on-data-server-dotnet\\Models\\Paciente.cs",
               "RelativeDocumentMoniker": "Models\\Paciente.cs",
@@ -110,12 +103,11 @@
               "RelativeToolTip": "Models\\Paciente.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T04:45:52.749Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-07T04:45:52.749Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "OcorrenciaController.cs",
               "DocumentMoniker": "C:\\ads\\csharp\\on-data-server-dotnet\\Controllers\\OcorrenciaController.cs",
               "RelativeDocumentMoniker": "Controllers\\OcorrenciaController.cs",
@@ -123,12 +115,11 @@
               "RelativeToolTip": "Controllers\\OcorrenciaController.cs",
               "ViewState": "AgIAADgAAAAAAAAAAAAIwBYAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T04:47:26.759Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-07T04:47:26.759Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "PacienteController.cs",
               "DocumentMoniker": "C:\\ads\\csharp\\on-data-server-dotnet\\Controllers\\PacienteController.cs",
               "RelativeDocumentMoniker": "Controllers\\PacienteController.cs",
@@ -136,20 +127,24 @@
               "RelativeToolTip": "Controllers\\PacienteController.cs",
               "ViewState": "AgIAADwAAAAAAAAAAAAqwD8AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T21:46:58.677Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-07T21:46:58.677Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "README.md",
               "DocumentMoniker": "C:\\ads\\csharp\\on-data-server-dotnet\\README.md",
               "RelativeDocumentMoniker": "README.md",
               "ToolTip": "C:\\ads\\csharp\\on-data-server-dotnet\\README.md",
               "RelativeToolTip": "README.md",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACgAAAAAAAAAAAAAAEYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2024-10-06T13:51:02.421Z"
+              "WhenOpened": "2024-10-06T13:51:02.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
             }
           ]
         }
