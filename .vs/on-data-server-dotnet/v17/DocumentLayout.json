@@ -3,6 +3,34 @@
   "WorkspaceRootPath": "C:\\ads\\csharp\\on-data-server-dotnet\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C55B14F6-8060-4670-934B-8710FBFF50D4}|on-data-server-dotnet.csproj|c:\\ads\\csharp\\on-data-server-dotnet\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C55B14F6-8060-4670-934B-8710FBFF50D4}|on-data-server-dotnet.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C55B14F6-8060-4670-934B-8710FBFF50D4}|on-data-server-dotnet.csproj|c:\\ads\\csharp\\on-data-server-dotnet\\data\\ondatadbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C55B14F6-8060-4670-934B-8710FBFF50D4}|on-data-server-dotnet.csproj|solutionrelative:data\\ondatadbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C55B14F6-8060-4670-934B-8710FBFF50D4}|on-data-server-dotnet.csproj|c:\\ads\\csharp\\on-data-server-dotnet\\models\\ocorrencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C55B14F6-8060-4670-934B-8710FBFF50D4}|on-data-server-dotnet.csproj|solutionrelative:models\\ocorrencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C55B14F6-8060-4670-934B-8710FBFF50D4}|on-data-server-dotnet.csproj|c:\\ads\\csharp\\on-data-server-dotnet\\models\\paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C55B14F6-8060-4670-934B-8710FBFF50D4}|on-data-server-dotnet.csproj|solutionrelative:models\\paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C55B14F6-8060-4670-934B-8710FBFF50D4}|on-data-server-dotnet.csproj|c:\\ads\\csharp\\on-data-server-dotnet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C55B14F6-8060-4670-934B-8710FBFF50D4}|on-data-server-dotnet.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C55B14F6-8060-4670-934B-8710FBFF50D4}|on-data-server-dotnet.csproj|c:\\ads\\csharp\\on-data-server-dotnet\\controllers\\pacientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C55B14F6-8060-4670-934B-8710FBFF50D4}|on-data-server-dotnet.csproj|solutionrelative:controllers\\pacientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C55B14F6-8060-4670-934B-8710FBFF50D4}|on-data-server-dotnet.csproj|c:\\ads\\csharp\\on-data-server-dotnet\\controllers\\ocorrenciacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C55B14F6-8060-4670-934B-8710FBFF50D4}|on-data-server-dotnet.csproj|solutionrelative:controllers\\ocorrenciacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C55B14F6-8060-4670-934B-8710FBFF50D4}|on-data-server-dotnet.csproj|c:\\ads\\csharp\\on-data-server-dotnet\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
       "RelativeMoniker": "D:0:0:{C55B14F6-8060-4670-934B-8710FBFF50D4}|on-data-server-dotnet.csproj|solutionrelative:readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     }
@@ -14,24 +42,114 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Ocorrencia.cs",
+              "DocumentMoniker": "C:\\ads\\csharp\\on-data-server-dotnet\\Models\\Ocorrencia.cs",
+              "RelativeDocumentMoniker": "Models\\Ocorrencia.cs",
+              "ToolTip": "C:\\ads\\csharp\\on-data-server-dotnet\\Models\\Ocorrencia.cs",
+              "RelativeToolTip": "Models\\Ocorrencia.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T04:45:21.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OnDataDbContext.cs",
+              "DocumentMoniker": "C:\\ads\\csharp\\on-data-server-dotnet\\Data\\OnDataDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\OnDataDbContext.cs",
+              "ToolTip": "C:\\ads\\csharp\\on-data-server-dotnet\\Data\\OnDataDbContext.cs",
+              "RelativeToolTip": "Data\\OnDataDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T04:46:41.22Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\ads\\csharp\\on-data-server-dotnet\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\ads\\csharp\\on-data-server-dotnet\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T21:49:17.6Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\ads\\csharp\\on-data-server-dotnet\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\ads\\csharp\\on-data-server-dotnet\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAADDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-07T04:49:05.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Paciente.cs",
+              "DocumentMoniker": "C:\\ads\\csharp\\on-data-server-dotnet\\Models\\Paciente.cs",
+              "RelativeDocumentMoniker": "Models\\Paciente.cs",
+              "ToolTip": "C:\\ads\\csharp\\on-data-server-dotnet\\Models\\Paciente.cs",
+              "RelativeToolTip": "Models\\Paciente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T04:45:52.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OcorrenciaController.cs",
+              "DocumentMoniker": "C:\\ads\\csharp\\on-data-server-dotnet\\Controllers\\OcorrenciaController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OcorrenciaController.cs",
+              "ToolTip": "C:\\ads\\csharp\\on-data-server-dotnet\\Controllers\\OcorrenciaController.cs",
+              "RelativeToolTip": "Controllers\\OcorrenciaController.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAIwBYAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T04:47:26.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PacienteController.cs",
+              "DocumentMoniker": "C:\\ads\\csharp\\on-data-server-dotnet\\Controllers\\PacienteController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PacienteController.cs",
+              "ToolTip": "C:\\ads\\csharp\\on-data-server-dotnet\\Controllers\\PacienteController.cs",
+              "RelativeToolTip": "Controllers\\PacienteController.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAqwD8AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T21:46:58.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "README.md",
               "DocumentMoniker": "C:\\ads\\csharp\\on-data-server-dotnet\\README.md",
               "RelativeDocumentMoniker": "README.md",
               "ToolTip": "C:\\ads\\csharp\\on-data-server-dotnet\\README.md",
               "RelativeToolTip": "README.md",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACQAAABVAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2024-10-06T13:51:02.421Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+              "WhenOpened": "2024-10-06T13:51:02.421Z"
             }
           ]
         }

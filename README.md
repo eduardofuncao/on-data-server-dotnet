@@ -35,7 +35,7 @@ Utilizar o comando `dotnet run` na raíz do diretório
 
 ## Trabalhando com o banco de dados
 - Para criar o arquivo Migration, executar `dotnet-ef migrations add NomeDaMigration`
-- Para atualizar a migration com base no banco de dados `dotnet-ef migrations update`
+- Para atualizar a migration com base no banco de dados `dotnet-ef database update`
 - Caso você precise excluir uma migration, executar `dotnet-ef migrations remove`
 
 ### Para Testar

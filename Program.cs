@@ -6,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllers();
-builder.Services.AddDbContext<PacienteDbContext>(options =>
+builder.Services.AddDbContext<OnDataDbContext>(options =>
     options.UseOracle(builder.Configuration.GetConnectionString("OracleDbConnection")));
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

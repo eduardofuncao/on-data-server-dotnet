@@ -9,9 +9,9 @@ namespace OnData.Controllers
     [ApiController]
     public class PacienteController : ControllerBase
     {
-        private readonly PacienteDbContext _context;
+        private readonly OnDataDbContext _context;
 
-        public PacienteController(PacienteDbContext context)
+        public PacienteController(OnDataDbContext context)
         {
             _context = context;
         }
