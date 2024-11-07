@@ -12,7 +12,7 @@ using Oracle.EntityFrameworkCore.Metadata;
 namespace on_data_server_dotnet.Migrations
 {
     [DbContext(typeof(OnDataDbContext))]
-    [Migration("20241008013253_InitialCreate")]
+    [Migration("20241107011638_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -33,19 +33,29 @@ namespace on_data_server_dotnet.Migrations
 
                     OraclePropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdOcorrencia"));
 
-                    b.Property<int>("Aprovado")
+                    b.Property<int?>("Aprovado")
                         .HasColumnType("NUMBER(10)");
 
-                    b.Property<DateTime>("Data")
+                    b.Property<DateTime?>("Data")
                         .HasColumnType("TIMESTAMP(7)");
+
+                    b.Property<string>("Detalhes")
+                        .IsRequired()
+                        .HasColumnType("NVARCHAR2(2000)");
+
+                    b.Property<string>("NomeOcorrencia")
+                        .IsRequired()
+                        .HasColumnType("NVARCHAR2(2000)");
 
                     b.Property<int>("PacienteId")
                         .HasColumnType("NUMBER(10)");
 
-                    b.Property<decimal>("Valor")
+                    b.Property<decimal?>("Valor")
                         .HasColumnType("DECIMAL(18, 2)");
 
                     b.HasKey("IdOcorrencia");
+
+                    b.HasIndex("PacienteId");
 
                     b.ToTable("Ocorrencias");
                 });
@@ -81,6 +91,22 @@ namespace on_data_server_dotnet.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Pacientes");
+                });
+
+            modelBuilder.Entity("OnData.Models.Ocorrencia", b =>
+                {
+                    b.HasOne("OnData.Models.Paciente", "Paciente")
+                        .WithMany("Ocorrencias")
+                        .HasForeignKey("PacienteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Paciente");
+                });
+
+            modelBuilder.Entity("OnData.Models.Paciente", b =>
+                {
+                    b.Navigation("Ocorrencias");
                 });
 #pragma warning restore 612, 618
         }

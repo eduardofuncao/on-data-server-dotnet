@@ -1,0 +1,50 @@
+@model OnData.Models.PacienteOcorrenciaViewModel
+
+<h2>Editar Paciente e Ocorrência</h2>
+
+<!-- Exibir valores carregados para diagnóstico -->
+<h3>Dados carregados</h3>
+<p>Nome do Paciente: @Model.Paciente.Nome</p>
+<p>CPF: @Model.Paciente.Cpf</p>
+<p>Email: @Model.Paciente.Email</p>
+<p>Data da Ocorrência: @Model.Ocorrencia?.Data</p>
+<p>Valor da Ocorrência: @Model.Ocorrencia?.Valor</p>
+<p>Aprovado: @(Model.Ocorrencia?.Aprovado == true ? "Sim" : Model.Ocorrencia?.Aprovado == false ? "Não" : "Não especificado")</p>
+
+
+<form action="@Url.Action("Edit", "Cadastro", new { id = Model.Paciente.Id })" method="post">
+    <!-- Formulário de edição -->
+    <input type="hidden" asp-for="Paciente.Id" />
+
+    <h3>Paciente</h3>
+    <label>Nome</label>
+    <input asp-for="Paciente.Nome" />
+
+    <label>CPF</label>
+    <input asp-for="Paciente.Cpf" placeholder="999.999.999-99" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="Digite o CPF no formato 999.999.999-99" />
+
+    <label>Email</label>
+    <input asp-for="Paciente.Email" />
+
+    <label>Telefone</label>
+    <input asp-for="Paciente.Telefone" />
+
+    <label>Endereço</label>
+    <input asp-for="Paciente.Endereco" />
+
+    <h3>Ocorrência</h3>
+    <input type="hidden" asp-for="Ocorrencia.IdOcorrencia" />
+
+    <label>Data</label>
+    <input asp-for="Ocorrencia.Data" type="date" />
+
+    <label>Valor</label>
+    <input asp-for="Ocorrencia.Valor" />
+
+    <label>Aprovado</label>
+    <input type="hidden" name="Ocorrencia.Aprovado" value="false" />
+    <input asp-for="Ocorrencia.Aprovado" type="checkbox" value="true" @(Model.Ocorrencia?.Aprovado == true ? "checked" : "") />
+
+    <button type="submit">Salvar</button>
+    <a href="@Url.Action("Index", "Cadastro")">Cancelar</a>
+</form>

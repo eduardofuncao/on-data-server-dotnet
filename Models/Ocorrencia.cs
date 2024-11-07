@@ -1,24 +1,16 @@
-using System.ComponentModel.DataAnnotations;
+using System;
 
 namespace OnData.Models
 {
     public class Ocorrencia
     {
-        [Key]
-        public int IdOcorrencia { get; set; }
+        public int IdOcorrencia { get; set; }  // Propriedade da chave primária
 
-        [Required]
-        public DateTime Data { get; set; }
+        public DateTime? Data { get; set; }
+        public decimal? Valor { get; set; }
+        public bool? Aprovado { get; set; }
 
-        [Required]
-        public decimal Valor { get; set; }
-
-
-        [Required]
-        public bool Aprovado { get; set; }
-
-        // Foreign key relationship
         public int PacienteId { get; set; }
- 
+        public Paciente? Paciente { get; set; }
     }
 }

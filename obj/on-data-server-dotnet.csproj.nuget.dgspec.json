@@ -1,28 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\ads\\csharp\\on-data-server-dotnet\\on-data-server-dotnet.csproj": {}
+    "/Users/arturfiorindo/RiderProjects/on-data-server-dotnet/on-data-server-dotnet.csproj": {}
   },
   "projects": {
-    "C:\\ads\\csharp\\on-data-server-dotnet\\on-data-server-dotnet.csproj": {
+    "/Users/arturfiorindo/RiderProjects/on-data-server-dotnet/on-data-server-dotnet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ads\\csharp\\on-data-server-dotnet\\on-data-server-dotnet.csproj",
+        "projectUniqueName": "/Users/arturfiorindo/RiderProjects/on-data-server-dotnet/on-data-server-dotnet.csproj",
         "projectName": "on-data-server-dotnet",
-        "projectPath": "C:\\ads\\csharp\\on-data-server-dotnet\\on-data-server-dotnet.csproj",
-        "packagesPath": "C:\\Users\\eduardofuncao\\.nuget\\packages\\",
-        "outputPath": "C:\\ads\\csharp\\on-data-server-dotnet\\obj\\",
+        "projectPath": "/Users/arturfiorindo/RiderProjects/on-data-server-dotnet/on-data-server-dotnet.csproj",
+        "packagesPath": "/Users/arturfiorindo/.nuget/packages/",
+        "outputPath": "/Users/arturfiorindo/RiderProjects/on-data-server-dotnet/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\eduardofuncao\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/arturfiorindo/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -92,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

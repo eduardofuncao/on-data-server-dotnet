@@ -13,21 +13,22 @@ namespace OnData.Data
         {
             base.OnModelCreating(modelBuilder);
 
-            // Map boolean to NUMBER(1)
+            // Define 'IdOcorrencia' como chave primária para a entidade 'Ocorrencia'
             modelBuilder.Entity<Ocorrencia>()
-            .Property(b => b.Aprovado)
-            .HasConversion(
-               v => v ? 1 : 0,
-               v => v == 1
-            );
+                .HasKey(o => o.IdOcorrencia);
 
+            // Mapear booleano 'Aprovado' para NUMBER(1)
+            modelBuilder.Entity<Ocorrencia>()
+                .Property(b => b.Aprovado)
+                .HasConversion(
+                    v => v.HasValue && v.Value ? 1 : 0,  // Converte true para 1, false/nulo para 0
+                    v => v == 1 ? (bool?)true : (bool?)false
+                );
 
-            // Other mappings...
+            // Outros mapeamentos, se houver
         }
 
         public DbSet<Paciente> Pacientes { get; set; }
         public DbSet<Ocorrencia> Ocorrencias { get; set; }
-
     }
 }
-
