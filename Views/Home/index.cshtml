@@ -1,7 +1,11 @@
-@{
-    ViewData["Title"] = "Home";
-}
+<link rel="stylesheet" href="~/css/styles.css" />
 
-<h1>Bem-vindo ao OnData</h1>
-<a href="@Url.Action("Create", "Cadastro")">Cadastrar Paciente e Ocorrência</a>
-<a href="@Url.Action("Index", "Cadastro")">Listar Pacientes e Ocorrências</a>
+
+<div class="container">
+    <h1>Bem-vindo ao OnData</h1>
+    
+    <div class="button-container">
+        <a href="@Url.Action("Create", "Cadastro")" class="button">Cadastrar Paciente e Ocorrência</a>
+        <a href="@Url.Action("Index", "Cadastro")" class="button">Listar Pacientes e Ocorrências</a>
+    </div>
+</div>

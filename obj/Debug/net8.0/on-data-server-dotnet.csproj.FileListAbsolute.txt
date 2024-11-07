@@ -344,3 +344,4 @@ C:/ads/csharp/on-data-server-dotnet/bin/Debug/net8.0/on-data-collection/bruno.js
 /Users/arturfiorindo/RiderProjects/on-data-server-dotnet/obj/Debug/net8.0/on-data-server-dotnet.pdb
 /Users/arturfiorindo/RiderProjects/on-data-server-dotnet/obj/Debug/net8.0/on-data-server-dotnet.genruntimeconfig.cache
 /Users/arturfiorindo/RiderProjects/on-data-server-dotnet/obj/Debug/net8.0/ref/on-data-server-dotnet.dll
+/Users/arturfiorindo/RiderProjects/on-data-server-dotnet/bin/Debug/net8.0/on-data-server-dotnet.staticwebassets.runtime.json

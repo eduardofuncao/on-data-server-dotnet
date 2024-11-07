@@ -24,6 +24,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+// Habilita o uso de arquivos estáticos na pasta wwwroot
+app.UseStaticFiles();
+
 // Habilitar o redirecionamento para HTTPS - Comentado temporariamente para diagnóstico
 // app.UseHttpsRedirection();
 
