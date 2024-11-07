@@ -1,7 +1,3 @@
-Aqui está o `README.md` atualizado com as informações mais recentes do projeto, incluindo as descrições de estrutura, rotas e configurações.
-
----
-
 # On-Data Backend Server
 
 API REST desenvolvida com C#/.NET usando Entity Framework para o aplicativo On-Data, uma solução de gerenciamento de sinistros odontológicos para a Odontoprev.
