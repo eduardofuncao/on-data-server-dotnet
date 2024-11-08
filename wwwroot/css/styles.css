@@ -172,6 +172,6 @@ table tr:nth-child(even) {
     background-color: #8a71e0;
     color: white;
     text-align: center;
-    padding: 1rem;
     font-size: 0.875rem;
+    height: 90px;
 }
