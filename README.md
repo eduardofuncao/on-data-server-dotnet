@@ -1,5 +1,3 @@
----
-
 # On-Data Backend Server
 
 API REST desenvolvida com C#/.NET usando Entity Framework para o aplicativo On-Data, uma solução de gerenciamento de sinistros odontológicos para a Odontoprev.
