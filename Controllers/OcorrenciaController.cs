@@ -1,7 +1,9 @@
+// OcorrenciaController.cs
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using OnData.Data;
 using OnData.Models;
+using OnData.Services;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace OnData.Controllers
 {
@@ -9,93 +11,73 @@ namespace OnData.Controllers
     [ApiController]
     public class OcorrenciaController : ControllerBase
     {
-        private readonly OnDataDbContext _context;
+        private readonly OcorrenciaService _ocorrenciaService;
 
-        public OcorrenciaController(OnDataDbContext context)
+        public OcorrenciaController(OcorrenciaService ocorrenciaService)
         {
-            _context = context;
+            _ocorrenciaService = ocorrenciaService;
         }
 
-        // GET: api/Ocorrencias
+        /// <summary>
+        /// Obtém a lista de todas as ocorrências.
+        /// </summary>
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Ocorrencia>>> GetOcorrencias()
         {
-            return await _context.Ocorrencias.ToListAsync();
+            return await _ocorrenciaService.GetOcorrenciasAsync();
         }
 
-        // GET: api/Ocorrencias/5
+        /// <summary>
+        /// Obtém uma ocorrência pelo ID.
+        /// </summary>
+        /// <param name="id">ID da ocorrência.</param>
         [HttpGet("{id}")]
         public async Task<ActionResult<Ocorrencia>> GetOcorrencia(int id)
         {
-            var Ocorrencia = await _context.Ocorrencias.FindAsync(id);
-
-            if (Ocorrencia == null)
+            var ocorrencia = await _ocorrenciaService.GetOcorrenciaByIdAsync(id);
+            if (ocorrencia == null)
             {
                 return NotFound();
             }
-
-            return Ocorrencia;
+            return ocorrencia;
         }
 
-        // PUT: api/Ocorrencias/5
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutOcorrencia(int id, Ocorrencia Ocorrencia)
+        /// <summary>
+        /// Cria uma nova ocorrência.
+        /// </summary>
+        /// <param name="ocorrencia">Dados da ocorrência.</param>
+        [HttpPost]
+        public async Task<ActionResult<Ocorrencia>> PostOcorrencia(Ocorrencia ocorrencia)
         {
-            if (id != Ocorrencia.IdOcorrencia)
+            await _ocorrenciaService.CreateOcorrenciaAsync(ocorrencia);
+            return CreatedAtAction(nameof(GetOcorrencia), new { id = ocorrencia.IdOcorrencia }, ocorrencia);
+        }
+
+        /// <summary>
+        /// Atualiza uma ocorrência existente.
+        /// </summary>
+        /// <param name="id">ID da ocorrência.</param>
+        /// <param name="ocorrencia">Dados atualizados da ocorrência.</param>
+        [HttpPut("{id}")]
+        public async Task<IActionResult> PutOcorrencia(int id, Ocorrencia ocorrencia)
+        {
+            if (id != ocorrencia.IdOcorrencia)
             {
                 return BadRequest();
             }
-
-            _context.Entry(Ocorrencia).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!OcorrenciaExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
+            await _ocorrenciaService.UpdateOcorrenciaAsync(ocorrencia);
             return NoContent();
         }
 
-        // POST: api/Ocorrencias
-        [HttpPost]
-        public async Task<ActionResult<Ocorrencia>> PostOcorrencia(Ocorrencia Ocorrencia)
-        {
-            _context.Ocorrencias.Add(Ocorrencia);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction(nameof(GetOcorrencia), new { id = Ocorrencia.IdOcorrencia }, Ocorrencia);
-        }
-
-        // DELETE: api/Ocorrencias/5
+        /// <summary>
+        /// Exclui uma ocorrência.
+        /// </summary>
+        /// <param name="id">ID da ocorrência.</param>
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteOcorrencia(int id)
         {
-            var Ocorrencia = await _context.Ocorrencias.FindAsync(id);
-            if (Ocorrencia == null)
-            {
-                return NotFound();
-            }
-
-            _context.Ocorrencias.Remove(Ocorrencia);
-            await _context.SaveChangesAsync();
-
+            await _ocorrenciaService.DeleteOcorrenciaAsync(id);
             return NoContent();
-        }
-
-        private bool OcorrenciaExists(int id)
-        {
-            return _context.Ocorrencias.Any(e => e.IdOcorrencia == id);
         }
     }
 }

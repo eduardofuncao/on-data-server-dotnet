@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using on_data_server_dotnet.service;
 using OnData.Data;
 using OnData.Models;
 
@@ -9,26 +10,23 @@ namespace OnData.Controllers
     [ApiController]
     public class PacienteController : ControllerBase
     {
-        private readonly OnDataDbContext _context;
+        private readonly PacienteService _pacienteService;
 
-        public PacienteController(OnDataDbContext context)
+        public PacienteController(PacienteService pacienteService)
         {
-            _context = context;
+            _pacienteService = pacienteService;
         }
 
-        // GET: api/Pacientes
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Paciente>>> GetPacientes()
         {
-            return await _context.Pacientes.ToListAsync();
+            return await _pacienteService.GetPacientesAsync();
         }
 
-        // GET: api/Pacientes/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Paciente>> GetPaciente(int id)
         {
-            var paciente = await _context.Pacientes.FindAsync(id);
-
+            var paciente = await _pacienteService.GetPacienteByIdAsync(id);
             if (paciente == null)
             {
                 return NotFound();
@@ -37,7 +35,13 @@ namespace OnData.Controllers
             return paciente;
         }
 
-        // PUT: api/Pacientes/5
+        [HttpPost]
+        public async Task<ActionResult<Paciente>> PostPaciente(Paciente paciente)
+        {
+            await _pacienteService.CreatePacienteAsync(paciente);
+            return CreatedAtAction(nameof(GetPaciente), new { id = paciente.Id }, paciente);
+        }
+
         [HttpPut("{id}")]
         public async Task<IActionResult> PutPaciente(int id, Paciente paciente)
         {
@@ -46,56 +50,16 @@ namespace OnData.Controllers
                 return BadRequest();
             }
 
-            _context.Entry(paciente).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!PacienteExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
+            await _pacienteService.UpdatePacienteAsync(paciente);
             return NoContent();
         }
 
-        // POST: api/Pacientes
-        [HttpPost]
-        public async Task<ActionResult<Paciente>> PostPaciente(Paciente paciente)
-        {
-            _context.Pacientes.Add(paciente);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction(nameof(GetPaciente), new { id = paciente.Id }, paciente);
-        }
-
-        // DELETE: api/Pacientes/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeletePaciente(int id)
         {
-            var paciente = await _context.Pacientes.FindAsync(id);
-            if (paciente == null)
-            {
-                return NotFound();
-            }
-
-            _context.Pacientes.Remove(paciente);
-            await _context.SaveChangesAsync();
-
+            await _pacienteService.DeletePacienteAsync(id);
             return NoContent();
         }
-
-        private bool PacienteExists(int id)
-        {
-            return _context.Pacientes.Any(e => e.Id == id);
-        }
     }
-}
+
+}    

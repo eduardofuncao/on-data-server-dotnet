@@ -1,5 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using OnData.Data;
+using OnData.Services;
+using Microsoft.OpenApi.Models;
+using System.Reflection;
+using on_data_server_dotnet.service;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,7 +17,27 @@ builder.Services.AddDbContext<OnDataDbContext>(options =>
 
 // Configuração do Swagger para documentação da API
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "OnData API", Version = "v1" });
+
+    // Configuração do arquivo XML de documentação
+    var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+    var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+
+    if (System.IO.File.Exists(xmlPath))
+    {
+        c.IncludeXmlComments(xmlPath);
+    }
+    else
+    {
+        Console.WriteLine($"Arquivo XML de documentação não encontrado: {xmlPath}");
+    }
+});
+
+// Injeção de dependência para os serviços
+builder.Services.AddScoped<PacienteService>();
+builder.Services.AddScoped<OcorrenciaService>();
 
 var app = builder.Build();
 
@@ -27,8 +51,8 @@ if (app.Environment.IsDevelopment())
 // Habilita o uso de arquivos estáticos na pasta wwwroot
 app.UseStaticFiles();
 
-// Habilitar o redirecionamento para HTTPS - Comentado temporariamente para diagnóstico
-// app.UseHttpsRedirection();
+// Habilitar o redirecionamento para HTTPS
+app.UseHttpsRedirection();
 
 app.UseAuthorization();
 

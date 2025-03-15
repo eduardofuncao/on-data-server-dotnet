@@ -1,10 +1,12 @@
-<link rel="stylesheet" href="~/css/styles.css" />
-
+@{
+    ViewData["Title"] = "Página Inicial";
+}
 
 <div class="container text-center py-5">
     <h1>Bem-vindo ao OnData</h1>
+    <p class="lead">Sistema de gerenciamento de pacientes e ocorrências.</p>
     <div class="d-flex justify-content-center gap-3 mt-4">
-        <a href="@Url.Action("Create", "Cadastro")" class="button btn btn-primary">Cadastrar Paciente e Ocorrência</a>
-        <a href="@Url.Action("Index", "Cadastro")" class="button btn btn-secondary">Listar Pacientes e Ocorrências</a>
+        <a href="@Url.Action("Create", "Cadastro")" class="btn btn-primary btn-lg">Cadastrar Paciente e Ocorrência</a>
+        <a href="@Url.Action("Index", "Cadastro")" class="btn btn-secondary btn-lg">Listar Pacientes e Ocorrências</a>
     </div>
 </div>

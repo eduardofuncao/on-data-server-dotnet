@@ -1,13 +1,21 @@
 @model IEnumerable<OnData.Models.Paciente>
 
-
+@{
+ViewData["Title"] = "Lista de Pacientes";
+}
 
 <div class="container">
     <h2 class="my-4">Lista de Pacientes e Ocorrências</h2>
 
-    <div class="table-container">
-        <table class="table table-bordered">
-            <thead>
+    @if (!Model.Any())
+    {
+    <div class="alert alert-info">Nenhum paciente cadastrado.</div>
+    }
+    else
+    {
+    <div class="table-responsive">
+        <table class="table table-striped table-hover">
+            <thead class="thead-dark">
             <tr>
                 <th>Nome</th>
                 <th>CPF</th>
@@ -20,20 +28,21 @@
             <tbody>
             @foreach (var paciente in Model)
             {
-                <tr>
-                    <td>@paciente.Nome</td>
-                    <td>@paciente.Cpf</td>
-                    <td>@paciente.Email</td>
-                    <td>@paciente.Telefone</td>
-                    <td>@paciente.Endereco</td>
-                    <td class="action-links">
-                        <a href="@Url.Action("Edit", "Cadastro", new { id = paciente.Id })">Editar</a> |
-                        <a href="@Url.Action("Details", "Cadastro", new { id = paciente.Id })">Detalhes</a> |
-                        <a href="@Url.Action("Delete", "Cadastro", new { id = paciente.Id })">Excluir</a>
-                    </td>
-                </tr>
+            <tr>
+                <td>@paciente.Nome</td>
+                <td>@paciente.Cpf</td>
+                <td>@paciente.Email</td>
+                <td>@paciente.Telefone</td>
+                <td>@paciente.Endereco</td>
+                <td class="action-links">
+                    <a href="@Url.Action("Edit", "Cadastro", new { id = paciente.Id })" class="btn btn-sm btn-warning">Editar</a>
+                    <a href="@Url.Action("Details", "Cadastro", new { id = paciente.Id })" class="btn btn-sm btn-info">Detalhes</a>
+                    <a href="@Url.Action("Delete", "Cadastro", new { id = paciente.Id })" class="btn btn-sm btn-danger">Excluir</a>
+                </td>
+            </tr>
             }
             </tbody>
         </table>
     </div>
+    }
 </div>
