@@ -1,5 +1,3 @@
-Aqui está o `README.md` atualizado com as informações solicitadas, incluindo a explicação da arquitetura, design patterns utilizados, instruções para rodar a API e exemplos de testes:
-
 ---
 
 # On-Data Backend Server
