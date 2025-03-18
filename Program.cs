@@ -10,10 +10,14 @@ var builder = WebApplication.CreateBuilder(args);
 // Configuração das URLs, incluindo as portas HTTP e HTTPS
 builder.WebHost.UseUrls("http://localhost:5146", "https://localhost:7114");
 
+// Registrar o singleton do AppConfigurationService
+var configService = AppConfigurationService.GetInstance(builder.Configuration);
+builder.Services.AddSingleton(configService);
+
 // Configuração dos serviços, agora com suporte a Views
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<OnDataDbContext>(options =>
-    options.UseOracle(builder.Configuration.GetConnectionString("OracleDbConnection")));
+    options.UseOracle(configService.GetDatabaseConnectionString()));
 
 // Configuração do Swagger para documentação da API
 builder.Services.AddEndpointsApiExplorer();
