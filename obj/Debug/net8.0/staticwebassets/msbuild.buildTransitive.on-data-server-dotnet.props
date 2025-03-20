@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="../buildMultiTargeting/on-data-server-dotnet.props" />
-</Project>
